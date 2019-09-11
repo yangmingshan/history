@@ -102,12 +102,6 @@ describe('a browser history', () => {
     });
   });
 
-  describe('location created by encoded and unencoded pathname', () => {
-    it('produces the same location.pathname', done => {
-      TestSequences.LocationPathnameAlwaysSame(history, done);
-    });
-  });
-
   describe('location created with encoded/unencoded reserved characters', () => {
     it('produces different location objects', done => {
       TestSequences.EncodedReservedCharacters(history, done);
